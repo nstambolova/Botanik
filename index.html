@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nat</title>
+    <link rel="icon" type="image/svg" href="icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="background"><img src="background.png" /></div>
+
+    <div id="game">
+      <div id="rules">
+        <a
+          href="https://www.spacecowboys.fr/_files/ugd/59baa2_03f7c079465b402f91765f60f94c9295.pdf"
+          target="_blank"
+          >Botanik Game Rules</a
+        >
+      </div>
+
+      <div id="showtooltip">Score Keeper Help</div>
+      <div id="tooltip">
+        <p>
+          1. Select an avatar and enter your name in the "Enter Player Name"
+          field.
+        </p>
+        <p>2. Do the same for your opponent.</p>
+        <p>3. Choose "Total Rounds" from the drop-down menu.</p>
+        <p>
+          4. Enter your scores in the "Woman Avatar Score" and "Man Avatar
+          Score" fields.
+        </p>
+        <p>
+          5. Both fields must be filled in order to submit your scores with
+          either "Submit Button" or hitting the "Enter" key.
+        </p>
+        <p>
+          6. When total rounds are completed the score will be automatically
+          calculated and displayed.
+        </p>
+        <p>
+          7. If no "Total Rounds" are selected you can use "Current Total"
+          button to display the total score.
+        </p>
+        <p>
+          8. Check highest and lowest scores from all completed sessions with
+          "All Time Stats" button.
+        </p>
+        <p>9. Click on "Reset Game" button to start a new game session.</p>
+      </div>
+
+      <p id="intro">Select an avatar</p>
+
+      <form id="playernameform" autocomplete="off">
+        <input
+          type="text"
+          placeholder="Enter Player Name"
+          maxlength="10"
+          id="inputname"
+        />
+        <input type="radio" id="selectplayername1" name="radioButton" />
+        <input type="radio" id="selectplayername2" name="radioButton" />
+      </form>
+
+      <label for="selectplayername1">
+        <img
+          src="woman_avatar.png"
+          alt="Woman Avatar"
+          width="150"
+          height="150"
+          id="womanavatar"
+        />
+      </label>
+      <img
+        src="woman_avatar_back.png"
+        alt="Woman Avatar Back"
+        width="150"
+        height="150"
+        class="hidden"
+        id="womanavatarback"
+      />
+      <div id="playername1">Woman Avatar</div>
+
+      <label for="selectplayername2">
+        <img
+          src="man_avatar.png"
+          alt="Man Avatar"
+          width="150"
+          height="150"
+          id="manavatar"
+        />
+      </label>
+      <img
+        src="man_avatar_back.png"
+        alt="Man Avatar Back"
+        width="150"
+        height="150"
+        class="hidden"
+        id="manavatarback"
+      />
+      <div id="playername2">Man Avatar</div>
+
+      <select id="playto">
+        <option value="-">Total Rounds</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <form id="player1scoreform" class="playerscoreforms" autocomplete="off">
+        <label for="score1"></label>
+        <input
+          type="text"
+          placeholder="Woman Avatar Score"
+          maxlength="2"
+          id="score1"
+          class="scorefields"
+          title="Accepts only numbers"
+        />
+      </form>
+
+      <form id="player2scoreform" class="playerscoreforms" autocomplete="off">
+        <label for="score2"></label>
+        <input
+          type="text"
+          placeholder="Man Avatar Score"
+          maxlength="2"
+          id="score2"
+          class="scorefields"
+          title="Accepts only numbers"
+        />
+      </form>
+
+      <button id="submitbutton">Submit Scores</button>
+
+      <div id="total1"></div>
+      <div id="total2"></div>
+
+      <div id="scorelistbackground"></div>
+      <div id="player1score" class="scorelist">WA Score List</div>
+      <div id="player2score" class="scorelist">MA Score List</div>
+
+      <div id="winner"></div>
+
+      <button id="resetbutton" title="Reset Game" disabled>Reset Game</button>
+
+      <button id="checktotal" title="Check current total">Current Total</button>
+      <div id="checktotalall"></div>
+
+      <button
+        id="statsbutton"
+        title="Highest & lowest scores from all sessions"
+      >
+        All Time Stats
+      </button>
+      <div id="checkstats"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

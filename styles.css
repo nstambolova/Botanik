@@ -1,0 +1,290 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f1f1f1;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+input {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+button {
+  background-color: #537c90;
+  border: none;
+  border-radius: 3%;
+  color: #e6ebd7;
+  padding: 5px 10px;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+#background {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-image: url("page.png");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  /* border-style: solid;
+  border-size: 20px; */
+}
+
+#rules {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 20%;
+  text-align: center;
+}
+
+#showtooltip {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 20%;
+  text-align: center;
+}
+
+#showtooltip:hover + #tooltip {
+  display: block;
+}
+
+#tooltip {
+  z-index: 1;
+  background-color: #8193a5;
+  position: absolute;
+  top: 3%;
+  left: 00%;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+#intro {
+  position: absolute;
+  top: 1%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+}
+
+#selectplayername1 {
+  position: absolute;
+  top: 5%;
+  left: 32.2%;
+  width: 10%;
+}
+
+#selectplayername2 {
+  position: absolute;
+  top: 5%;
+  right: 32.5%;
+  width: 10%;
+}
+
+#womanavatar,
+#womanavatarback {
+  position: absolute;
+  top: 7%;
+  left: 30%;
+  width: 150px;
+  transition: transform 0.7s ease;
+}
+
+#manavatar,
+#manavatarback {
+  position: absolute;
+  top: 7%;
+  right: 30%;
+  width: 150px;
+  transition: transform 0.7s ease;
+}
+
+#inputname {
+  position: absolute;
+  top: 29%;
+  left: 42%;
+  width: 16%;
+  text-align: center;
+}
+
+#playername1 {
+  position: absolute;
+  top: 25%;
+  left: 32.5%;
+  width: 10%;
+  text-align: center;
+}
+
+#playername2 {
+  position: absolute;
+  top: 25%;
+  right: 32.5%;
+  width: 10%;
+  text-align: center;
+}
+
+#playto {
+  position: absolute;
+  top: 34%;
+  left: 45%;
+  width: 15%;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+#score1 {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 16%;
+  text-align: center;
+}
+
+#score2 {
+  position: absolute;
+  top: 40%;
+  left: 52%;
+  width: 16%;
+  text-align: center;
+}
+
+#submitbutton {
+  position: absolute;
+  top: 45%;
+  left: 42.4%;
+  width: 16%;26
+  text-align: center;
+}
+
+#scorelistbackground {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  width: 400px;
+  height: 250px;
+  background-color: none;
+  border: 1px solid #999;
+  border-radius: 10px;
+}
+
+/* #scorelistbackground {
+  position: absolute;
+  top: 47%;
+  left: 25%;
+  background-image: url("page.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+#player1score {
+  position: absolute;
+  top: 52%;
+  left: 28%;
+  width: 20%;
+  text-align: center;
+}
+
+#player2score {
+  position: absolute;
+  top: 52%;
+  right: 28%;
+  width: 20%;
+  text-align: center;
+}
+
+#winner {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 45%;
+  text-align: center;
+  /* border-style: solid;
+  border-size: 20px; */
+}
+
+#resetbutton {
+  position: absolute;
+  top: 80%;
+  left: 42.4%;
+  width: 16%;
+  text-align: center;
+}
+
+#checktotal {
+  position: absolute;
+  top: 86%;
+  left: 32%;
+  width: 16%;
+  text-align: center;
+}
+
+#statsbutton {
+  position: absolute;
+  top: 86%;
+  right: 32%;
+  width: 16%;
+  text-align: center;
+}
+
+#checktotalall {
+  position: absolute;
+  top: 90%;
+  right: 53%;
+  width: 45%;
+  text-align: right;
+  /* border-style: solid;
+  border-size: 20px; */
+}
+
+#checkstats {
+  position: absolute;
+  top: 88%;
+  left: 47.5%;
+  width: 45%;
+  text-align: left;
+  /* border-style: solid;
+  border-size: 20px; */
+}
+
+.hidden {
+  display: none;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
