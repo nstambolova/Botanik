@@ -38,7 +38,7 @@ button:disabled {
   position: absolute;
   top: 0%;
   right: 0%;
-  background-image: url("page.png");
+  background-image: url("background.png");
   background-repeat: no-repeat;
   width: 50%;
   height: 100%;
